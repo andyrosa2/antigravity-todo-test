@@ -3,7 +3,13 @@ Node.js, Express, PostgreSQL.
 No css.
 It allows you to add a new note to a list of notes.
 
-Deployment:
+Local Development:
+1. Install PostgreSQL and create database: `cloud_todo`
+2. Run `npm install`
+3. Run `.\start-local.ps1` (sets DATABASE_URL and starts server)
+4. Open http://localhost:3000
+
+Cloud Deployment:
 Push to github
 Create Render account at [render.com](https://render.com) 
 connect your GitHub account
@@ -14,4 +20,4 @@ From Render dashboard:
 - Click **Apply**
 
 Launch:
-https://antigravity-todo-test.onrender.com
+https://?.onrender.com

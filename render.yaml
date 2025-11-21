@@ -2,6 +2,7 @@ services:
   - type: web
     name: cloud-todo
     env: node
+    plan: free
     startCommand: node server.js
     envVars:
       - key: DATABASE_URL
@@ -11,3 +12,4 @@ services:
 
 databases:
   - name: cloud-todo-db
+    plan: free
