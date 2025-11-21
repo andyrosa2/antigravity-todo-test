@@ -1,57 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cloud Todo</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  <div class="container">
-    <header>
-      <h1>Todos</h1>
-      <div id="auth-section">
-        <!-- Injected by JS -->
-      </div>
-    </header>
+  <h1>Notes</h1>
 
-    <main id="app" style="display: none;">
-      <form id="todo-form">
-        <input type="text" id="todo-input" placeholder="What needs to be done?" required autocomplete="off">
-      </form>
-      <ul id="todo-list">
-        <!-- Todos go here -->
-      </ul>
-    </main>
+  <form id="noteForm">
+    <input type="text" id="noteInput" placeholder="Enter a note" required>
+    <button type="submit">Add Note</button>
+  </form>
 
-    <div id="setup-prompt" style="display: none;">
-      <p>First time setup: Choose your admin password.</p>
-      <form id="setup-form" style="display: flex; flex-direction: column; gap: 10px; align-items: center; margin-top: 1rem;">
-        <input type="password" id="setup-password-input" placeholder="Choose password (min 14 chars)" required
-          style="padding: 8px; border: 1px solid #ddd; border-radius: 4px; width: 250px;">
-        <button type="submit"
-          style="padding: 8px 16px; background: #28a745; color: white; border: none; border-radius: 4px; cursor: pointer; width: 268px;">Set Password</button>
-      </form>
-      <p id="setup-error" style="color: red; display: none; margin-top: 0.5rem;"></p>
-    </div>
+  <ul id="notesList"></ul>
 
-    <div id="login-prompt" style="display: none;">
-      <p>Enter credentials to access todos.</p>
-      <form id="login-form" style="display: flex; flex-direction: column; gap: 10px; align-items: center; margin-top: 1rem;">
-        <input type="text" id="username-input" placeholder="Username" required
-          style="padding: 8px; border: 1px solid #ddd; border-radius: 4px; width: 200px;">
-        <input type="password" id="password-input" placeholder="Password" required
-          style="padding: 8px; border: 1px solid #ddd; border-radius: 4px; width: 200px;">
-        <button type="submit"
-          style="padding: 8px 16px; background: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer; width: 218px;">Login</button>
-      </form>
-      <p id="login-error" style="color: red; display: none; margin-top: 0.5rem;"></p>
-    </div>
-  </div>
   <script src="script.js"></script>
 </body>
-
 </html>
