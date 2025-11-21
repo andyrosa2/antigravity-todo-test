@@ -3,6 +3,7 @@ services:
     name: cloud-todo
     env: node
     plan: free
+    buildCommand: npm install
     startCommand: node server.js
     envVars:
       - key: DATABASE_URL
