@@ -8,8 +8,10 @@ Push to github
 Create Render account at [render.com](https://render.com) 
 connect your GitHub account
 
-3. From Render dashboard:
-   - Click **New +** → **Blueprint**
-   - Select repository: `andyrosa2/antigravity-todo-test`
-   - Click **Apply**
+From Render dashboard:
+- Click **New +** → **Blueprint**
+- Select repository: `andyrosa2/antigravity-todo-test`
+- Click **Apply**
 
+Launch:
+https://antigravity-todo-test.onrender.com
